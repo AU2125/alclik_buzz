@@ -11,13 +11,13 @@
     <section class="w-full shadow-md shadow-gray-800 items-center">
         <form method="POST" class="flex flex-col gap-4 bg-gray-600 p-4 rounded-md text-gray-200">
             <h1 class="text-xl">Register Your Team</h1>
-            <TextInput label="Team Name" placeholder="Enter the name of the team" name="teamName"/> 
+            <TextInput label="Team Name" placeholder="Enter the name of the team" name="teamName"/>
             <SubmitButton />
         </form>
         {#if form?.success}
             <!-- this message is ephemeral; it exists because the page was rendered in
                 response to a form submission. it will vanish if the user reloads -->
-            <p>Successfully logged in! Welcome back, {data.teamname}</p>
+            <p>Successfully logged in! Welcome back, {data.teams[0].name}</p>
         {/if}
     </section>
 </main>

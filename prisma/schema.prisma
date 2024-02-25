@@ -13,7 +13,6 @@ datasource db {
 
 model Team {
     name    String @id
-    ip      String @unique
 }
 
 model Response {
