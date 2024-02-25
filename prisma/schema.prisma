@@ -15,7 +15,13 @@ model Team {
     name    String @id
 }
 
+model Question {
+    id      Int @default(autoincrement()) @id
+    createdAt   DateTime @default(now())
+}
 model Response {
     id          Int @default(autoincrement()) @id
-    respondedAt DateTime
+    qid         Int
+    tid         String
+    respondedAt DateTime @default(now())
 }
