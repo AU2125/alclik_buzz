@@ -1,8 +1,6 @@
-<style lang="scss">
-    @use '@picocss/pico/scss/pico' with (
-      $enable-semantic-container: true,
-      $enable-classes: false
-    );
-</style>
+<script>
+	import '../app.pcss';
+	import '../app.pcss';
+</script>
 
-<slot></slot>
+<slot />
